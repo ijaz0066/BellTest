@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EFCC9AB1E25E301EC4F4F82 /* Pods_BellAssesment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28EC94BC1B1E3AE5DA29E50E /* Pods_BellAssesment.framework */; };
+		6C22A3D86742E6F98CF96D0E /* Pods_BellAssesmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D678B65D27FFD189BC709FAE /* Pods_BellAssesmentTests.framework */; };
 		ABF7E45E262EA649007939F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7E45D262EA649007939F5 /* AppDelegate.swift */; };
 		ABF7E460262EA649007939F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7E45F262EA649007939F5 /* SceneDelegate.swift */; };
 		ABF7E462262EA649007939F5 /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7E461262EA649007939F5 /* VehicleViewController.swift */; };
@@ -24,6 +26,8 @@
 		ABF7E4B3262FE6DE007939F5 /* car_list.json in Resources */ = {isa = PBXBuildFile; fileRef = ABF7E4AD262FE6DE007939F5 /* car_list.json */; };
 		ABF7E4B4262FE6DE007939F5 /* Alpine_roadster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABF7E4AE262FE6DE007939F5 /* Alpine_roadster.jpg */; };
 		ABF7E4B5262FE6DE007939F5 /* Mercedez_benz_GLC.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABF7E4AF262FE6DE007939F5 /* Mercedez_benz_GLC.jpg */; };
+		ABF7E4BA26302CE4007939F5 /* VehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7E4B926302CE4007939F5 /* VehicleViewModel.swift */; };
+		BF3F0F6F60F7F69B773948A4 /* Pods_BellAssesment_BellAssesmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD6496D08F9EB33993D6268 /* Pods_BellAssesment_BellAssesmentUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28EC94BC1B1E3AE5DA29E50E /* Pods_BellAssesment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BellAssesment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EB79F0139886F40FB14A285 /* Pods-BellAssesment-BellAssesmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BellAssesment-BellAssesmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-BellAssesment-BellAssesmentUITests/Pods-BellAssesment-BellAssesmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		529268CC710091A9FB4BB501 /* Pods-BellAssesmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BellAssesmentTests.release.xcconfig"; path = "Target Support Files/Pods-BellAssesmentTests/Pods-BellAssesmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		629B839D5CA766A39D814875 /* Pods-BellAssesment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BellAssesment.debug.xcconfig"; path = "Target Support Files/Pods-BellAssesment/Pods-BellAssesment.debug.xcconfig"; sourceTree = "<group>"; };
+		6B201742DA868526706D6BA8 /* Pods-BellAssesmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BellAssesmentTests.debug.xcconfig"; path = "Target Support Files/Pods-BellAssesmentTests/Pods-BellAssesmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6CFCF479AFD437FE10725C3B /* Pods-BellAssesment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BellAssesment.release.xcconfig"; path = "Target Support Files/Pods-BellAssesment/Pods-BellAssesment.release.xcconfig"; sourceTree = "<group>"; };
+		7FD6496D08F9EB33993D6268 /* Pods_BellAssesment_BellAssesmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BellAssesment_BellAssesmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D6C601CED777554B797DBE3 /* Pods-BellAssesment-BellAssesmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BellAssesment-BellAssesmentUITests.release.xcconfig"; path = "Target Support Files/Pods-BellAssesment-BellAssesmentUITests/Pods-BellAssesment-BellAssesmentUITests.release.xcconfig"; sourceTree = "<group>"; };
 		ABF7E45A262EA649007939F5 /* BellAssesment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BellAssesment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF7E45D262EA649007939F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABF7E45F262EA649007939F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +79,8 @@
 		ABF7E4AD262FE6DE007939F5 /* car_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = car_list.json; sourceTree = "<group>"; };
 		ABF7E4AE262FE6DE007939F5 /* Alpine_roadster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Alpine_roadster.jpg; sourceTree = "<group>"; };
 		ABF7E4AF262FE6DE007939F5 /* Mercedez_benz_GLC.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mercedez_benz_GLC.jpg; sourceTree = "<group>"; };
+		ABF7E4B926302CE4007939F5 /* VehicleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewModel.swift; sourceTree = "<group>"; };
+		D678B65D27FFD189BC709FAE /* Pods_BellAssesmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BellAssesmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EFCC9AB1E25E301EC4F4F82 /* Pods_BellAssesment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C22A3D86742E6F98CF96D0E /* Pods_BellAssesmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,12 +104,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF3F0F6F60F7F69B773948A4 /* Pods_BellAssesment_BellAssesmentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07FFA02EB74704D543A23AA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				629B839D5CA766A39D814875 /* Pods-BellAssesment.debug.xcconfig */,
+				6CFCF479AFD437FE10725C3B /* Pods-BellAssesment.release.xcconfig */,
+				4EB79F0139886F40FB14A285 /* Pods-BellAssesment-BellAssesmentUITests.debug.xcconfig */,
+				8D6C601CED777554B797DBE3 /* Pods-BellAssesment-BellAssesmentUITests.release.xcconfig */,
+				6B201742DA868526706D6BA8 /* Pods-BellAssesmentTests.debug.xcconfig */,
+				529268CC710091A9FB4BB501 /* Pods-BellAssesmentTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		ABF7E451262EA649007939F5 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +132,8 @@
 				ABF7E473262EA64D007939F5 /* BellAssesmentTests */,
 				ABF7E47E262EA64D007939F5 /* BellAssesmentUITests */,
 				ABF7E45B262EA649007939F5 /* Products */,
+				07FFA02EB74704D543A23AA8 /* Pods */,
+				CA3FDCC3F07997CF970B54A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +193,7 @@
 		ABF7E499262EAB51007939F5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				ABF7E4B926302CE4007939F5 /* VehicleViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -211,6 +245,16 @@
 			path = Stroyboard;
 			sourceTree = "<group>";
 		};
+		CA3FDCC3F07997CF970B54A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28EC94BC1B1E3AE5DA29E50E /* Pods_BellAssesment.framework */,
+				7FD6496D08F9EB33993D6268 /* Pods_BellAssesment_BellAssesmentUITests.framework */,
+				D678B65D27FFD189BC709FAE /* Pods_BellAssesmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -218,9 +262,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABF7E484262EA64D007939F5 /* Build configuration list for PBXNativeTarget "BellAssesment" */;
 			buildPhases = (
+				847AA331608894CECA1A66DB /* [CP] Check Pods Manifest.lock */,
 				ABF7E456262EA649007939F5 /* Sources */,
 				ABF7E457262EA649007939F5 /* Frameworks */,
 				ABF7E458262EA649007939F5 /* Resources */,
+				FF0DF6062C821A5DF1AE3D1C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +281,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABF7E487262EA64D007939F5 /* Build configuration list for PBXNativeTarget "BellAssesmentTests" */;
 			buildPhases = (
+				94E9D0A1600F9298CE073B2D /* [CP] Check Pods Manifest.lock */,
 				ABF7E46C262EA64D007939F5 /* Sources */,
 				ABF7E46D262EA64D007939F5 /* Frameworks */,
 				ABF7E46E262EA64D007939F5 /* Resources */,
@@ -253,9 +300,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABF7E48A262EA64D007939F5 /* Build configuration list for PBXNativeTarget "BellAssesmentUITests" */;
 			buildPhases = (
+				7DD2C45CEC363B53B91331DC /* [CP] Check Pods Manifest.lock */,
 				ABF7E477262EA64D007939F5 /* Sources */,
 				ABF7E478262EA64D007939F5 /* Frameworks */,
 				ABF7E479262EA64D007939F5 /* Resources */,
+				7ABBBDE663808FA226AF86D6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -343,12 +392,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7ABBBDE663808FA226AF86D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BellAssesment-BellAssesmentUITests/Pods-BellAssesment-BellAssesmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BellAssesment-BellAssesmentUITests/Pods-BellAssesment-BellAssesmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BellAssesment-BellAssesmentUITests/Pods-BellAssesment-BellAssesmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DD2C45CEC363B53B91331DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BellAssesment-BellAssesmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		847AA331608894CECA1A66DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BellAssesment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94E9D0A1600F9298CE073B2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BellAssesmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF0DF6062C821A5DF1AE3D1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BellAssesment/Pods-BellAssesment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BellAssesment/Pods-BellAssesment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BellAssesment/Pods-BellAssesment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ABF7E456262EA649007939F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				ABF7E492262EA837007939F5 /* Vehicle.swift in Sources */,
+				ABF7E4BA26302CE4007939F5 /* VehicleViewModel.swift in Sources */,
 				ABF7E4A2262EABEA007939F5 /* VehicleTableViewCell.swift in Sources */,
 				ABF7E462262EA649007939F5 /* VehicleViewController.swift in Sources */,
 				ABF7E45E262EA649007939F5 /* AppDelegate.swift in Sources */,
@@ -525,6 +678,7 @@
 		};
 		ABF7E485262EA64D007939F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 629B839D5CA766A39D814875 /* Pods-BellAssesment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -544,6 +698,7 @@
 		};
 		ABF7E486262EA64D007939F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CFCF479AFD437FE10725C3B /* Pods-BellAssesment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -563,6 +718,7 @@
 		};
 		ABF7E488262EA64D007939F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B201742DA868526706D6BA8 /* Pods-BellAssesmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -585,6 +741,7 @@
 		};
 		ABF7E489262EA64D007939F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 529268CC710091A9FB4BB501 /* Pods-BellAssesmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -607,6 +764,7 @@
 		};
 		ABF7E48B262EA64D007939F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EB79F0139886F40FB14A285 /* Pods-BellAssesment-BellAssesmentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -627,6 +785,7 @@
 		};
 		ABF7E48C262EA64D007939F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D6C601CED777554B797DBE3 /* Pods-BellAssesment-BellAssesmentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

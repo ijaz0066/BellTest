@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,7 +19,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJ5-JJ-Dfk">
                         <rect key="frame" x="0.0" y="0.0" width="345" height="93"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z0G-BO-hwA">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z0G-BO-hwA">
                                 <rect key="frame" x="15" y="15" width="114" height="66"/>
                                 <color key="backgroundColor" red="0.0" green="0.37647058820000001" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -46,13 +45,19 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.44694456339999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVY-kc-NO1">
-                                <rect key="frame" x="137" y="61" width="142" height="20"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVY-kc-NO1" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="137" y="61" width="120" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="7uA-dt-INJ"/>
-                                    <constraint firstAttribute="width" constant="142" id="xcN-Ik-LGR"/>
+                                    <constraint firstAttribute="width" constant="120" id="xcN-Ik-LGR"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" red="0.9882352941176471" green="0.37647058823529411" blue="0.086274509803921567" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
@@ -92,14 +97,14 @@
                 <outlet property="displayImageView" destination="Z0G-BO-hwA" id="DVA-iA-haz"/>
                 <outlet property="name" destination="yQi-2O-lYO" id="Ibt-Ks-mNZ"/>
                 <outlet property="price" destination="cgn-tk-n6O" id="05l-OY-Mgv"/>
-                <outlet property="ratingView" destination="uVY-kc-NO1" id="InS-Lt-HeA"/>
+                <outlet property="ratingView" destination="uVY-kc-NO1" id="Jbm-Om-eVJ"/>
             </connections>
             <point key="canvasLocation" x="216.66666666666669" y="38.504464285714285"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
+    <designables>
+        <designable name="uVY-kc-NO1">
+            <size key="intrinsicContentSize" width="120" height="20"/>
+        </designable>
+    </designables>
 </document>

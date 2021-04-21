@@ -1,0 +1,6 @@
+framework module Pods_BellAssesment_BellAssesmentUITests {
+  umbrella header "Pods-BellAssesment-BellAssesmentUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

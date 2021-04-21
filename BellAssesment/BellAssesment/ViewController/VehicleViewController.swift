@@ -14,6 +14,9 @@ class VehicleViewController: UIViewController {
     @IBOutlet weak var makeTextField: UITextField!
     @IBOutlet weak var modelTextField: UITextField!
     
+    var vehicleViewModel: VehicleViewModel?
+    var arrayOfVehicles: [Vehicle]?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +26,7 @@ class VehicleViewController: UIViewController {
         filterView.layer.cornerRadius = 10.0
         self.makeShadowOfTextField(textField: modelTextField)
         self.makeShadowOfTextField(textField: makeTextField)
+        arrayOfVehicles = self.loadJson(filename: "car_list")
         
     }
 }
@@ -34,15 +38,31 @@ extension VehicleViewController  {
         textField.layer.shadowOpacity  = 1
         textField.layer.shadowOffset = CGSize(width: 0, height: 0)
     }
+    
+    private func loadJson(filename fileName: String) -> [Vehicle]? {
+        if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: url)
+                let decoder = JSONDecoder()
+                let jsonData = try decoder.decode([Vehicle].self, from: data)
+                return jsonData
+            } catch {
+                print("error:\(error)")
+            }
+        }
+        return nil
+    }
 }
 
 extension VehicleViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return  10
+        return  arrayOfVehicles?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? VehicleTableViewCell
+        let viewModel = VehicleViewModel(vehicle: arrayOfVehicles![indexPath.row])
+        cell?.viewModel = viewModel
         return cell!
     }
     

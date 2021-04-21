@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Vehicle {
+struct Vehicle: Decodable {
     var name: String
     var model: String
     var price: Int

@@ -6,13 +6,23 @@
 //
 
 import UIKit
+import Cosmos
 
 class VehicleTableViewCell: UITableViewCell {
     
     @IBOutlet weak var displayImageView: UIImageView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var price: UILabel!
-    @IBOutlet weak var ratingView: UIView!
+    @IBOutlet weak var ratingView: CosmosView!
+    
+    var viewModel: VehicleViewModel! {
+        didSet {
+            self.name.text = viewModel.name
+            self.price.text = viewModel.price
+            self.ratingView.rating = viewModel.rating
+            self.displayImageView.image = viewModel.image
+        }
+    }
     
 
     override func awakeFromNib() {
