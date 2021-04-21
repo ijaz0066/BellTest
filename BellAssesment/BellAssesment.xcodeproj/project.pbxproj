@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,6 +27,7 @@
 		ABF7E4B4262FE6DE007939F5 /* Alpine_roadster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABF7E4AE262FE6DE007939F5 /* Alpine_roadster.jpg */; };
 		ABF7E4B5262FE6DE007939F5 /* Mercedez_benz_GLC.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABF7E4AF262FE6DE007939F5 /* Mercedez_benz_GLC.jpg */; };
 		ABF7E4BA26302CE4007939F5 /* VehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7E4B926302CE4007939F5 /* VehicleViewModel.swift */; };
+		ABF7E4D02630B0D7007939F5 /* VehicleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7E4CF2630B0D7007939F5 /* VehicleService.swift */; };
 		BF3F0F6F60F7F69B773948A4 /* Pods_BellAssesment_BellAssesmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD6496D08F9EB33993D6268 /* Pods_BellAssesment_BellAssesmentUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		ABF7E4AE262FE6DE007939F5 /* Alpine_roadster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Alpine_roadster.jpg; sourceTree = "<group>"; };
 		ABF7E4AF262FE6DE007939F5 /* Mercedez_benz_GLC.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mercedez_benz_GLC.jpg; sourceTree = "<group>"; };
 		ABF7E4B926302CE4007939F5 /* VehicleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewModel.swift; sourceTree = "<group>"; };
+		ABF7E4CF2630B0D7007939F5 /* VehicleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleService.swift; sourceTree = "<group>"; };
 		D678B65D27FFD189BC709FAE /* Pods_BellAssesmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BellAssesmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -121,7 +123,6 @@
 				6B201742DA868526706D6BA8 /* Pods-BellAssesmentTests.debug.xcconfig */,
 				529268CC710091A9FB4BB501 /* Pods-BellAssesmentTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -210,6 +211,7 @@
 		ABF7E49B262EAB7B007939F5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				ABF7E4CE2630B0C6007939F5 /* Services */,
 				ABF7E461262EA649007939F5 /* VehicleViewController.swift */,
 			);
 			path = ViewController;
@@ -243,6 +245,14 @@
 				ABF7E463262EA649007939F5 /* Main.storyboard */,
 			);
 			path = Stroyboard;
+			sourceTree = "<group>";
+		};
+		ABF7E4CE2630B0C6007939F5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ABF7E4CF2630B0D7007939F5 /* VehicleService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		CA3FDCC3F07997CF970B54A2 /* Frameworks */ = {
@@ -500,6 +510,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABF7E4D02630B0D7007939F5 /* VehicleService.swift in Sources */,
 				ABF7E492262EA837007939F5 /* Vehicle.swift in Sources */,
 				ABF7E4BA26302CE4007939F5 /* VehicleViewModel.swift in Sources */,
 				ABF7E4A2262EABEA007939F5 /* VehicleTableViewCell.swift in Sources */,

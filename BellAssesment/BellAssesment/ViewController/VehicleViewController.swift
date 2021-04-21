@@ -16,22 +16,40 @@ class VehicleViewController: UIViewController {
     
     var vehicleViewModel: VehicleViewModel?
     var arrayOfVehicles: [Vehicle]?
+    var filteredArrayOfVehicles: [Vehicle]?
+    
+    var vehicleService: VehicleService!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let tableViewCellNib = UINib(nibName: "VehicleTableViewCell", bundle: nil)
         tableView.register(tableViewCellNib, forCellReuseIdentifier: "cell")
         
         filterView.layer.cornerRadius = 10.0
         self.makeShadowOfTextField(textField: modelTextField)
         self.makeShadowOfTextField(textField: makeTextField)
-        arrayOfVehicles = self.loadJson(filename: "car_list")
+        
+        vehicleService = VehicleService(vehicles: self.loadJson(filename: "car_list")!)
+        arrayOfVehicles = vehicleService.getAll()
+        
+        makeTextField.addTarget(self, action: #selector(VehicleViewController.textFieldDidChange(_:)),
+                                  for: .editingChanged)
+        modelTextField.addTarget(self, action: #selector(VehicleViewController.textFieldDidChange(_:)),
+                                  for: .editingChanged)
         
     }
 }
 
+// MARK:- Local Methods
 extension VehicleViewController  {
+    
+    @objc func textFieldDidChange(_ textField: UITextField) {
+        arrayOfVehicles = vehicleService.filterVehicles(make: makeTextField.text ?? "", model: modelTextField.text ?? "")
+        
+        self.tableView.reloadData()
+    }
     
     private func makeShadowOfTextField(textField: UITextField) {
         textField.layer.shadowRadius = 2.0
@@ -53,8 +71,9 @@ extension VehicleViewController  {
         return nil
     }
 }
-
+// MARK:- UITextFieldDelegate DataSource, Delegate
 extension VehicleViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return  arrayOfVehicles?.count ?? 0
     }
@@ -65,7 +84,14 @@ extension VehicleViewController: UITableViewDelegate, UITableViewDataSource {
         cell?.viewModel = viewModel
         return cell!
     }
+}
+
+// MARK:- UITextFieldDelegate Delegate
+extension VehicleViewController: UITextFieldDelegate {
     
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            textField.resignFirstResponder()
+            return true
+    }
 }
 
