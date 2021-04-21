@@ -14,7 +14,12 @@ class VehicleTableViewCell: UITableViewCell {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var price: UILabel!
     @IBOutlet weak var ratingView: CosmosView!
+    @IBOutlet weak var prosStackView: UIStackView!
+    @IBOutlet weak var prosLabel: UILabel!
+    @IBOutlet weak var consLabel: UILabel!
     
+    //// Stackview stuff is pending.... to show pros and cons use stackview
+        
     var viewModel: VehicleViewModel! {
         didSet {
             self.name.text = viewModel.name
@@ -27,6 +32,8 @@ class VehicleTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        
         // Initialization code
     }
 
