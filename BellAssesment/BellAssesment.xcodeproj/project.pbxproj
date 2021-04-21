@@ -9,12 +9,21 @@
 /* Begin PBXBuildFile section */
 		ABF7E45E262EA649007939F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7E45D262EA649007939F5 /* AppDelegate.swift */; };
 		ABF7E460262EA649007939F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7E45F262EA649007939F5 /* SceneDelegate.swift */; };
-		ABF7E462262EA649007939F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7E461262EA649007939F5 /* ViewController.swift */; };
+		ABF7E462262EA649007939F5 /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7E461262EA649007939F5 /* VehicleViewController.swift */; };
 		ABF7E465262EA649007939F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF7E463262EA649007939F5 /* Main.storyboard */; };
 		ABF7E467262EA64D007939F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABF7E466262EA64D007939F5 /* Assets.xcassets */; };
 		ABF7E46A262EA64D007939F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF7E468262EA64D007939F5 /* LaunchScreen.storyboard */; };
 		ABF7E475262EA64D007939F5 /* BellAssesmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7E474262EA64D007939F5 /* BellAssesmentTests.swift */; };
 		ABF7E480262EA64D007939F5 /* BellAssesmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7E47F262EA64D007939F5 /* BellAssesmentUITests.swift */; };
+		ABF7E492262EA837007939F5 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7E491262EA837007939F5 /* Vehicle.swift */; };
+		ABF7E4A2262EABEA007939F5 /* VehicleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7E4A0262EABEA007939F5 /* VehicleTableViewCell.swift */; };
+		ABF7E4A3262EABEA007939F5 /* VehicleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABF7E4A1262EABEA007939F5 /* VehicleTableViewCell.xib */; };
+		ABF7E4B0262FE6DE007939F5 /* Range_Rover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABF7E4AA262FE6DE007939F5 /* Range_Rover.jpg */; };
+		ABF7E4B1262FE6DE007939F5 /* BMW_330i.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABF7E4AB262FE6DE007939F5 /* BMW_330i.jpg */; };
+		ABF7E4B2262FE6DE007939F5 /* Tacoma.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABF7E4AC262FE6DE007939F5 /* Tacoma.jpg */; };
+		ABF7E4B3262FE6DE007939F5 /* car_list.json in Resources */ = {isa = PBXBuildFile; fileRef = ABF7E4AD262FE6DE007939F5 /* car_list.json */; };
+		ABF7E4B4262FE6DE007939F5 /* Alpine_roadster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABF7E4AE262FE6DE007939F5 /* Alpine_roadster.jpg */; };
+		ABF7E4B5262FE6DE007939F5 /* Mercedez_benz_GLC.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABF7E4AF262FE6DE007939F5 /* Mercedez_benz_GLC.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +47,7 @@
 		ABF7E45A262EA649007939F5 /* BellAssesment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BellAssesment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF7E45D262EA649007939F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABF7E45F262EA649007939F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ABF7E461262EA649007939F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ABF7E461262EA649007939F5 /* VehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewController.swift; sourceTree = "<group>"; };
 		ABF7E464262EA649007939F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABF7E466262EA64D007939F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABF7E469262EA64D007939F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +58,15 @@
 		ABF7E47B262EA64D007939F5 /* BellAssesmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BellAssesmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF7E47F262EA64D007939F5 /* BellAssesmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellAssesmentUITests.swift; sourceTree = "<group>"; };
 		ABF7E481262EA64D007939F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABF7E491262EA837007939F5 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		ABF7E4A0262EABEA007939F5 /* VehicleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTableViewCell.swift; sourceTree = "<group>"; };
+		ABF7E4A1262EABEA007939F5 /* VehicleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleTableViewCell.xib; sourceTree = "<group>"; };
+		ABF7E4AA262FE6DE007939F5 /* Range_Rover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Range_Rover.jpg; sourceTree = "<group>"; };
+		ABF7E4AB262FE6DE007939F5 /* BMW_330i.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BMW_330i.jpg; sourceTree = "<group>"; };
+		ABF7E4AC262FE6DE007939F5 /* Tacoma.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tacoma.jpg; sourceTree = "<group>"; };
+		ABF7E4AD262FE6DE007939F5 /* car_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = car_list.json; sourceTree = "<group>"; };
+		ABF7E4AE262FE6DE007939F5 /* Alpine_roadster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Alpine_roadster.jpg; sourceTree = "<group>"; };
+		ABF7E4AF262FE6DE007939F5 /* Mercedez_benz_GLC.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mercedez_benz_GLC.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +117,13 @@
 		ABF7E45C262EA649007939F5 /* BellAssesment */ = {
 			isa = PBXGroup;
 			children = (
-				ABF7E45D262EA649007939F5 /* AppDelegate.swift */,
-				ABF7E45F262EA649007939F5 /* SceneDelegate.swift */,
-				ABF7E461262EA649007939F5 /* ViewController.swift */,
-				ABF7E463262EA649007939F5 /* Main.storyboard */,
+				ABF7E49E262EAB9B007939F5 /* Appdelegate */,
+				ABF7E49F262EABB1007939F5 /* Stroyboard */,
+				ABF7E49D262EAB94007939F5 /* Resources */,
+				ABF7E49B262EAB7B007939F5 /* ViewController */,
+				ABF7E49A262EAB5B007939F5 /* View */,
+				ABF7E499262EAB51007939F5 /* ViewModel */,
+				ABF7E490262EA7EE007939F5 /* Model */,
 				ABF7E466262EA64D007939F5 /* Assets.xcassets */,
 				ABF7E468262EA64D007939F5 /* LaunchScreen.storyboard */,
 				ABF7E46B262EA64D007939F5 /* Info.plist */,
@@ -126,6 +147,68 @@
 				ABF7E481262EA64D007939F5 /* Info.plist */,
 			);
 			path = BellAssesmentUITests;
+			sourceTree = "<group>";
+		};
+		ABF7E490262EA7EE007939F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABF7E491262EA837007939F5 /* Vehicle.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ABF7E499262EAB51007939F5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ABF7E49A262EAB5B007939F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ABF7E4A0262EABEA007939F5 /* VehicleTableViewCell.swift */,
+				ABF7E4A1262EABEA007939F5 /* VehicleTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ABF7E49B262EAB7B007939F5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ABF7E461262EA649007939F5 /* VehicleViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		ABF7E49D262EAB94007939F5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ABF7E4AE262FE6DE007939F5 /* Alpine_roadster.jpg */,
+				ABF7E4AB262FE6DE007939F5 /* BMW_330i.jpg */,
+				ABF7E4AD262FE6DE007939F5 /* car_list.json */,
+				ABF7E4AF262FE6DE007939F5 /* Mercedez_benz_GLC.jpg */,
+				ABF7E4AA262FE6DE007939F5 /* Range_Rover.jpg */,
+				ABF7E4AC262FE6DE007939F5 /* Tacoma.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ABF7E49E262EAB9B007939F5 /* Appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				ABF7E45F262EA649007939F5 /* SceneDelegate.swift */,
+				ABF7E45D262EA649007939F5 /* AppDelegate.swift */,
+			);
+			path = Appdelegate;
+			sourceTree = "<group>";
+		};
+		ABF7E49F262EABB1007939F5 /* Stroyboard */ = {
+			isa = PBXGroup;
+			children = (
+				ABF7E463262EA649007939F5 /* Main.storyboard */,
+			);
+			path = Stroyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +314,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABF7E4B2262FE6DE007939F5 /* Tacoma.jpg in Resources */,
+				ABF7E4A3262EABEA007939F5 /* VehicleTableViewCell.xib in Resources */,
+				ABF7E4B5262FE6DE007939F5 /* Mercedez_benz_GLC.jpg in Resources */,
 				ABF7E46A262EA64D007939F5 /* LaunchScreen.storyboard in Resources */,
+				ABF7E4B4262FE6DE007939F5 /* Alpine_roadster.jpg in Resources */,
 				ABF7E467262EA64D007939F5 /* Assets.xcassets in Resources */,
+				ABF7E4B1262FE6DE007939F5 /* BMW_330i.jpg in Resources */,
+				ABF7E4B0262FE6DE007939F5 /* Range_Rover.jpg in Resources */,
+				ABF7E4B3262FE6DE007939F5 /* car_list.json in Resources */,
 				ABF7E465262EA649007939F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,7 +348,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABF7E462262EA649007939F5 /* ViewController.swift in Sources */,
+				ABF7E492262EA837007939F5 /* Vehicle.swift in Sources */,
+				ABF7E4A2262EABEA007939F5 /* VehicleTableViewCell.swift in Sources */,
+				ABF7E462262EA649007939F5 /* VehicleViewController.swift in Sources */,
 				ABF7E45E262EA649007939F5 /* AppDelegate.swift in Sources */,
 				ABF7E460262EA649007939F5 /* SceneDelegate.swift in Sources */,
 			);
