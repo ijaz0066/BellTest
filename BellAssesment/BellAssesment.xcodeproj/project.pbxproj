@@ -28,6 +28,7 @@
 		ABF7E4B5262FE6DE007939F5 /* Mercedez_benz_GLC.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABF7E4AF262FE6DE007939F5 /* Mercedez_benz_GLC.jpg */; };
 		ABF7E4BA26302CE4007939F5 /* VehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7E4B926302CE4007939F5 /* VehicleViewModel.swift */; };
 		ABF7E4D02630B0D7007939F5 /* VehicleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7E4CF2630B0D7007939F5 /* VehicleService.swift */; };
+		ABF7E4D82630D861007939F5 /* VehicleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7E4D72630D861007939F5 /* VehicleTest.swift */; };
 		BF3F0F6F60F7F69B773948A4 /* Pods_BellAssesment_BellAssesmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD6496D08F9EB33993D6268 /* Pods_BellAssesment_BellAssesmentUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		ABF7E4AF262FE6DE007939F5 /* Mercedez_benz_GLC.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mercedez_benz_GLC.jpg; sourceTree = "<group>"; };
 		ABF7E4B926302CE4007939F5 /* VehicleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewModel.swift; sourceTree = "<group>"; };
 		ABF7E4CF2630B0D7007939F5 /* VehicleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleService.swift; sourceTree = "<group>"; };
+		ABF7E4D72630D861007939F5 /* VehicleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTest.swift; sourceTree = "<group>"; };
 		D678B65D27FFD189BC709FAE /* Pods_BellAssesmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BellAssesmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -170,6 +172,7 @@
 			children = (
 				ABF7E474262EA64D007939F5 /* BellAssesmentTests.swift */,
 				ABF7E476262EA64D007939F5 /* Info.plist */,
+				ABF7E4D72630D861007939F5 /* VehicleTest.swift */,
 			);
 			path = BellAssesmentTests;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABF7E4D82630D861007939F5 /* VehicleTest.swift in Sources */,
 				ABF7E475262EA64D007939F5 /* BellAssesmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
